@@ -1,0 +1,211 @@
+<!doctype html>
+
+<head>
+  <!--
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900&display=swap" rel="stylesheet">
+
+
+  <link href="/main.87c0748b313a1dda75f5.css" rel="stylesheet">
+</head>
+
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .88rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: left;
+    background-color: #fff;
+  }
+</style>
+<style>
+  .card {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+  }
+
+  .card-header {
+    text-transform: uppercase;
+    color: rgba(13, 27, 62, 0.7);
+    font-weight: bold;
+    font-size: .88rem;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    border-bottom-width: 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: .625rem;
+    height: 3.5rem;
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    -ms-flex: 1 1 auto;
+    min-height: 1px;
+  }
+
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+  }
+
+  .table-bordered {
+    border: 1px solid #adafb2;
+  }
+
+  .card-footer {
+    background-color: white;
+  }
+
+</style>
+<style>
+  tbody.custom-hover > tr:hover {
+    background-color: #E0F3FF;
+    transition: .2s;
+  }
+</style>
+<body class="bg-light">
+<div class="container mt-4">
+
+
+
+
+  <div class="row mt-5">
+
+
+    <div class="col-sm-12 col-lg-4 p-2">
+      <form>
+        <div class="form-group">
+          <label for="courses" class="h5" style="text-shadow: 2px 2px 3px #b3b3b3">Course:</label>
+          <select id="courses" class="form-control shadow-sm">
+            <option class="form-control" value="volvo">Course1</option>
+            <option class="" value="saab">Course2</option>
+            <option class="" value="mercedes">Course3</option>
+            <option class="" value="audi">Course4</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="section" class="h5" style="text-shadow: 2px 2px 3px #b3b3b3">Section:</label>
+          <select id="section" class="form-control shadow-sm">
+            <option value="volvo">A</option>
+            <option value="saab">B</option>
+            <option value="mercedes">E1</option>
+            <option value="audi">E2</option>
+          </select>
+        </div>
+
+        <style>
+
+          .lift-animation{
+            box-shadow: 3px 3px 10px grey;
+          }
+          .lift-animation:hover{
+            box-shadow: 6px 6px 20px grey;
+            transition: .4s;
+          }
+        </style>
+        <div class="form-group">
+          <label for="lecInput" class="h5" style="text-shadow: 2px 2px 3px #b3b3b3">Roll No:</label>
+          <input type="text"
+                 class="form-control shadow-sm" name="rollInput" id="lecInput" aria-describedby="helpId"
+                 placeholder="Student Roll No">
+
+        </div>
+        <button class="btn btn-primary lift-animation " type="button">View Profile</button>
+      </form>
+    </div>
+    <div class="col-sm-12 col-lg-8 p-2 mt-sm-5 mt-lg-0">
+      <div class="card text-left shadow">
+        <div class="card-header bg-dark text-light"><i class="fa fa-line-chart">Student Profile</i></div>
+        <div class="card-body" style="max-height: 40rem; overflow: hidden;overflow-y: scroll">
+          <table class="table table-no-bordered table-borderless bg-light m-0 p-0">
+            <thead>
+            <tr>
+              <th>Roll No</th>
+              <th>Name</th>
+              <th>Date</th>
+              <th>View</th>
+              <th>Marks obt/10<th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td scope="row">0000-BSCS-16</td>
+              <td>Adnan</td>
+              <td>0/0/0</td>
+              <td></td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td scope="row">0000-BSCS-16</td>
+              <td>Adnan</td>
+              <td>0/0/0</td>
+              <td></td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td scope="row">0000-BSCS-16</td>
+              <td>Adnan</td>
+              <td>0/0/0</td>
+              <td></td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td scope="row">0000-BSCS-16</td>
+              <td>Adnan</td>
+              <td>0/0/0</td>
+              <td></td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td scope="row">0000-BSCS-16</td>
+              <td>Adnan</td>
+              <td>0/0/0</td>
+              <td></td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td scope="row">0000-BSCS-16</td>
+              <td>Adnan</td>
+              <td>0/0/0</td>
+              <td></td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td scope="row">0000-BSCS-16</td>
+              <td>Adnan</td>
+              <td>0/0/0</td>
+              <td></td>
+              <td>7</td>
+            </tr>
+
+            </tbody>
+
+
+          </table>
+
+        </div>
+
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+</body>
+
+
+
